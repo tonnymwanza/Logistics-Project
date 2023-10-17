@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <form method="POST" action="trucking">
+                    {% csrf_token %}
+                    {{fom.as_p}}
+                    <input type="submit" value="send">
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

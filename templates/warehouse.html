@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <form method="POST" action="warehouse">
+                    {% csrf_token %}
+                    {{fom.as_p}}
+                    <input type="submit" value="submit">
+                </form>
+                <p>This is the total price: {{price}}.</p>
+            </div>
+        </section>
+    </body>
+</html>
